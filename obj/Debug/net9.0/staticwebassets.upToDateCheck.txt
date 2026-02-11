@@ -1,3 +1,13 @@
+wwwroot\admin\css\adminlte.css
+wwwroot\admin\css\adminlte.css.map
+wwwroot\admin\imgs\AdminLTELogo.png
+wwwroot\admin\imgs\user1-128x128.jpg
+wwwroot\admin\imgs\user2-160x160.jpg
+wwwroot\admin\imgs\user3-128x128.jpg
+wwwroot\admin\imgs\user7-128x128.jpg
+wwwroot\admin\imgs\user8-128x128.jpg
+wwwroot\admin\js\adminlte.js
+wwwroot\admin\js\adminlte.js.map
 wwwroot\css\site.css
 wwwroot\css\styles.css
 wwwroot\favicon.ico
@@ -127,3 +137,7 @@ E:\BackEndCourse\mvc\KAShop\KAShop\wwwroot\lib\jquery\dist\jquery.slim.min.map
 E:\BackEndCourse\mvc\KAShop\KAShop\wwwroot\lib\jquery\LICENSE.txt
 E:\BackEndCourse\mvc\KAShop\KAShop\wwwroot\css\styles.css
 E:\BackEndCourse\mvc\KAShop\KAShop\wwwroot\js\scripts.js
+E:\BackEndCourse\mvc\KAShop\KAShop\wwwroot\admin\css\adminlte.css
+E:\BackEndCourse\mvc\KAShop\KAShop\wwwroot\admin\css\adminlte.css.map
+E:\BackEndCourse\mvc\KAShop\KAShop\wwwroot\admin\js\adminlte.js
+E:\BackEndCourse\mvc\KAShop\KAShop\wwwroot\admin\js\adminlte.js.map
