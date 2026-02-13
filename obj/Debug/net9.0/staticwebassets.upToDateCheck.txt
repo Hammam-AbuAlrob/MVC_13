@@ -11,6 +11,8 @@ wwwroot\admin\js\adminlte.js.map
 wwwroot\css\site.css
 wwwroot\css\styles.css
 wwwroot\favicon.ico
+wwwroot\images\f2a16d46-e27e-4802-bad5-9fd04d667d04.png
+wwwroot\images\f7138bf5-20f6-469b-9cbc-311ea66d8d59.png
 wwwroot\js\scripts.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css

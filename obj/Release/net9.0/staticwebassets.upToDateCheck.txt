@@ -73,6 +73,8 @@ wwwroot\admin\imgs\user7-128x128.jpg
 wwwroot\admin\imgs\user8-128x128.jpg
 wwwroot\admin\js\adminlte.js
 wwwroot\admin\js\adminlte.js.map
+wwwroot\images\f2a16d46-e27e-4802-bad5-9fd04d667d04.png
+wwwroot\images\f7138bf5-20f6-469b-9cbc-311ea66d8d59.png
 E:\BackEndCourse\mvc\KAShop\KAShop\wwwroot\css\site.css
 E:\BackEndCourse\mvc\KAShop\KAShop\wwwroot\css\styles.css
 E:\BackEndCourse\mvc\KAShop\KAShop\wwwroot\favicon.ico

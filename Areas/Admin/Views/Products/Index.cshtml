@@ -1,0 +1,59 @@
+﻿@model List<Product>
+
+<div class="card mb-4">
+    <div class="card-header"><h3 class="card-title">Bordered Table</h3></div>
+    <!-- /.card-header -->
+    <div class="card-body">
+
+        @if (!Model.Any())
+        {
+            <div class="alert alert-warning">No product found</div>
+        }
+        else { }
+
+        <table class="table table-bordered" role="table">
+            <thead>
+                <tr>
+                    <th style="width: 10px" scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Category</th>
+
+
+                    <th>Action</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var prod in Model)
+                {
+                    <tr class="align-middle">
+                        <td>@prod.Id</td>
+                        <td>@prod.Name</td>
+                        <td>
+                            <img src="/images/@prod.Image" />
+                        </td>
+                        <td>@prod.Category.Name</td>
+                        <td>
+                            <a class="btn btn-danger" asp-controller="Categories" asp-action="remove" asp-route-id="@prod.Id">Delete</a>
+                            <a class="btn btn-info" asp-controller="Categories" asp-action="edit" asp-route-id="@prod.Id">Edit</a>
+                        </td>
+                    </tr>
+
+                }
+
+            </tbody>
+        </table>
+    </div>
+    <!-- /.card-body -->
+    <div class="card-footer clearfix">
+        <ul class="pagination pagination-sm m-0 float-end">
+            <li class="page-item"><a class="page-link" href="#">«</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">»</a></li>
+        </ul>
+    </div>
+</div>

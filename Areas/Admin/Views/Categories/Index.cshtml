@@ -16,6 +16,7 @@
                 <tr>
                     <th style="width: 10px" scope="col">#</th>
                     <th scope="col">Name</th>
+                    <th>Action</th>
                   
                 </tr>
             </thead>
@@ -26,12 +27,9 @@
                     <tr class="align-middle">
                         <td>@categ.Id</td>
                         <td>@categ.Name</td>
-                        <td>
-                            <div class="progress progress-xs">
-                                <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                            </div>
+                        <td><a class="btn btn-danger" asp-controller="Categories" asp-action="remove" asp-route-id="@categ.Id">Delete</a>
+                            <a class="btn btn-info" asp-controller="Categories" asp-action="edit" asp-route-id="@categ.Id">Edit</a>   
                         </td>
-                        <td><span class="badge text-bg-danger">55%</span></td>
                     </tr>
 
                 }

@@ -1,0 +1,47 @@
+﻿@model Product
+
+<form asp-controller="products" asp-action="Store" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"> product name </label>
+        <input asp-for=Name class="form-control" id="exampleInputEmail1">
+        <span class="text-danger" asp-validation-for=Name> </span>
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"> product Price </label>
+        <input asp-for=Price class="form-control" id="exampleInputEmail1">
+        <span class="text-danger" asp-validation-for=Price> </span>
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"> product Description </label>
+        <textarea asp-for=Description class="form-control" id="exampleInputEmail1"></textarea>
+        <span class="text-danger" asp-validation-for=Description> </span>
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"> product Rate </label>
+        <input asp-for=Rate class="form-control" id="exampleInputEmail1">
+        <span class="text-danger" asp-validation-for=Rate> </span>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"> product Image </label>
+        <input type="file" asp-for=Image class="form-control" id="exampleInputEmail1">
+        <span class="text-danger"> </span>
+    </div>
+
+
+    <div class="mb-3">
+        <label asp-for="categoryID" class="form-label"></label>
+        <select class="form-select" asp-for="categoryID">
+            @foreach(var item in (List<Category>) ViewData["categories"])
+            {
+                <option value="@item.Id">@item.Name</option>
+                
+            }
+        </select>
+        <span class="text-danger" asp-validation-for=categoryID> </span>
+    </div>
+
+    <button class="btn btn-success">save</button>
+</form>
